@@ -1,0 +1,33 @@
+@font-face {
+    font-family: Minecraftia;
+    src: url(Minecraftia.ttf);
+}
+
+body {
+    background-color: beige;
+    font-family: 'Minecraftia';
+    font-weight: normal;
+    font-style: normal; 
+}
+
+.Heading {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#PDF {
+    display: flex;
+    width: 1000px;
+    height: 895px;
+    margin-left: 100px;
+}
+
+.F {
+    display: flex;
+    margin-top: 50px;
+
+}
+
+#namepdf{
+    padding: 50px
+}

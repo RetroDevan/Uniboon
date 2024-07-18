@@ -1,0 +1,53 @@
+@font-face {
+    font-family: Minecraftia;
+    src: url(Minecraftia.ttf);
+}
+
+body {
+    background-color: beige;
+    font-family: 'Minecraftia';
+    font-weight: normal;
+    font-style: normal; 
+}
+
+.Heading {
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+button {
+  font-family: Minecraftia;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #aa7e04;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #523107;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.forensic{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.community{
+   max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px; 
+}
