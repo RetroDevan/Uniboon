@@ -8,6 +8,7 @@ body {
     font-family: 'Minecraftia';
     font-weight: normal;
     font-style: normal; 
+    margin: 0px;
 }
 
 .Heading {
@@ -15,19 +16,52 @@ body {
     padding-top: 20px;
 }
 
-#PDF {
-    display: flex;
-    width: 1000px;
-    height: 895px;
-    margin-left: 100px;
+.navbar {
+    border: burlywood solid;
+    background-color: burlywood;
+    overflow: hidden;
+    height: 35px;
 }
 
 .F {
-    display: flex;
-    margin-top: 50px;
-
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
 }
 
-#namepdf{
-    padding: 50px
+button {
+  font-family: Minecraftia;
+  padding: 6px 15px;
+  margin-left: 25px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #aa7e04;
+  border: none;
+  border-radius: 6px;
+}
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #523107;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.forensic{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.community{
+   max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px; 
 }
