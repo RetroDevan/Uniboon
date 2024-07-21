@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forensic</title>
+    <title>Commmunity</title>
     <link rel="stylesheet" href="css/forensic.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="F">
-        <h2 id="namepdf">Community 1:</h2><iframe id="PDF" src="Papers/COMMUNITY MEDICINE -  PAPER 1 COMPILED PDF.pdf" frameborder="0"></iframe>
+    <div class="navbar">
+        <a href="index.html"><button>Dashboard</button></a>
+        <button id="paperbutton" data-tab-target="#paper1">Paper 1</button>
+        <button id="paperbutton" data-tab-target="#paper2">Paper 2</button>
     </div>
-    <div class="F">
-        <h2 id="namepdf">Community 2:</h2><iframe id="PDF" src="Papers/COMMUNITY MEDICINE - PAPER 2 COMPILED PDF.pdf" frameborder="0"></iframe>
+    <div class="F" id="paper1">
+        <embed src="Papers/COMMUNITY MEDICINE -  PAPER 1 COMPILED PDF.pdf#toolbar=0" height="1000" width="900"/> 
+    </div>
+    <div class="F" id="paper2">    
+        <embed src="Papers/COMMUNITY MEDICINE -  PAPER 1 COMPILED PDF.pdf#toolbar=0" height="1000" width="900"/> 
     </div>
 </body>
 </html>
