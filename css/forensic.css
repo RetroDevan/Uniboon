@@ -21,6 +21,7 @@ body {
     background-color: burlywood;
     overflow: hidden;
     height: 35px;
+    display: flex;
 }
 
 .F {
@@ -52,16 +53,28 @@ button:active {
   transform: translateY(4px);
 }
 
-.forensic{
+[data-tab-content]{
+    display: none;
+}
+
+.active[data-tab-content]{
+    display: block;
+}
+
+.active[data-tab-target]{
+    background-color: #3e8e41;
+}
+
+#paper1 {
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
-.community{
-   max-width: fit-content;
+#paper2 {
+    max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px; 
+    margin-top: 20px;
 }

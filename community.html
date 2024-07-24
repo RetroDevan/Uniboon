@@ -5,19 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Commmunity</title>
     <link rel="stylesheet" href="css/forensic.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="navbar">
+    <div class="navbar"> 
         <a href="index.html"><button>Dashboard</button></a>
-        <button id="paperbutton" data-tab-target="#paper1">Paper 1</button>
-        <button id="paperbutton" data-tab-target="#paper2">Paper 2</button>
+        <div class="tabs">
+        <button data-tab-target="#paper1" class="tab">Paper 1</button>
+        <button data-tab-target="#paper2" class="tab">Paper 2</button>
+        </div>
     </div>
-    <div class="F" id="paper1">
+    <div class="tab-content">
+    <div id="paper1" data-tab-content class="active">
         <embed src="Papers/COMMUNITY MEDICINE -  PAPER 1 COMPILED PDF.pdf#toolbar=0" height="1000" width="900"/> 
     </div>
-    <div class="F" id="paper2">    
-        <embed src="Papers/COMMUNITY MEDICINE -  PAPER 1 COMPILED PDF.pdf#toolbar=0" height="1000" width="900"/> 
+    <div id="paper2" data-tab-content>    
+        <embed src="Papers/COMMUNITY MEDICINE - PAPER 2 COMPILED PDF.pdf" height="1000" width="900"/> 
+    </div>
     </div>
 </body>
+<script>
+    const tabs = document.querySelectorAll('[data-tab-target]')
+    const tabContents = document.querySelectorAll('[data-tab-content]')
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const target = document.querySelector(tab.dataset.tabTarget)
+            tabContents.forEach(tabContent => {
+                tabContent.classList.remove('active')
+            })
+            tabs.forEach(tab => {
+                tab.classList.remove('active')
+            })
+            tab.classList.add('active')
+            target.classList.add('active')
+    })
+})
+</script>
 </html>
