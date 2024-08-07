@@ -1,22 +1,29 @@
 @font-face {
-    font-family: Minecraftia;
-    src: url(Minecraftia.ttf);
+    font-family: Kaisei;
+    src: url(KaiseiOpti-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(RobotoSlab-VariableFont_wght.ttf);
 }
 
 body {
-    background-color: #00008B;
-    font-family: 'Minecraftia';
+    background-color: #171C2E;
+    font-family:Kaisei;
     font-weight: normal;
     font-style: normal; 
 }
 
 .Heading {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 130px;
+    font-size:7mm;
+    color:#fff;
 }
 
 .Title{
-    font-size: 3rem;
+    font-size: 6rem;
     background: linear-gradient(
         to right,
         rgb(250,78,10),
@@ -40,6 +47,30 @@ body {
     }
 }
 
+
+#access{
+    margin-left: auto;
+    margin-right: auto;
+    width: 210mm;
+}
+
+.Dash{
+    padding: 15px;
+}
+
+#Home{
+    padding: 6px 14px;
+    border-radius: 0;
+    border-color: rgb(226, 224, 224);
+    background-color: #171C2E;
+    color:#d6d1d1;
+    font-size: 25px;
+    font-family: roboto;
+    border-width: 3px;
+    font-weight: bold;
+    border-style: solid;
+}
+/*
 button {
   font-family: Minecraftia;
   padding: 15px 25px;
@@ -75,3 +106,4 @@ button:active {
     margin-right: auto;
     margin-top: 50px; 
 }
+*/
