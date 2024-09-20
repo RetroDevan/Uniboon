@@ -107,3 +107,15 @@ button:active {
     margin-top: 50px; 
 }
 */
+
+.Hyperlinks{
+    text-align: center;
+}
+
+#links{
+    padding: 100px;
+    color: #fff;
+    font-size: x-large;
+    display: flexbox;
+}
+
